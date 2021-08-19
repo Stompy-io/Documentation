@@ -1,3 +1,1 @@
-- Get Started with Stompy
-
-  - [Connect AWS Account](connect-aws-account.md)
+- [如何连接 AWS 账户](connect-aws-account.md)
