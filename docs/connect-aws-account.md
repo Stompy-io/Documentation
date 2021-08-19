@@ -102,7 +102,7 @@ f. 如果您之前没有设置过CUR，这里需要等24-48个小时(取决于�
 
 1.  点击“运行模板”。
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image021.png)
+![img](/_images/aws-stompy-step4-run.png)
 
 2. 页面跳转到AWS的CloudFormation页面后，勾选“我已知晓AWS CloudFormation可能会创建IAM资源”，点击“创建堆栈”。
 
