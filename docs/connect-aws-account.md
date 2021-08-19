@@ -8,13 +8,13 @@
 
 1. 注册后登录，进入连接页面，点击 **登录**
 
-<img src="/_images/aws-login.png" />
+![img](/_images/aws-login.png)
 
 2. 登录您的AWS根账号
 
 > 建议您登录AWS根账号，因为AWS根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
 
-<img src="/_images/aws-root-login.png" />
+![img](/_images/aws-root-login.png)
 
 
 ### 第二步：选择您需要的产品权限
@@ -34,9 +34,9 @@
 
 1. 进入AWS管理控制台后，点击右上角个人账号，选择**我的账号**，激活IAM用户和角色访问账单信息的权限。
 
-<img src="/_images/aws-my-account.png" />
+![img](/_images/aws-my-account.png)
 
-<img src="/_images/aws-activate-iam-access.png" />
+![img](/_images/aws-activate-iam-access.png)
 
 2. 打开成本和使用率报告Cost and Usage Reports（CUR）
 
@@ -50,39 +50,39 @@ c. 时间粒度为每小时。
 
 d. 使用 Amazon Athena 集成报告数据。
 
-<img src="/_images/aws-cost-usage-report.png" />
+![img](/_images/aws-cost-usage-report.png)
 
-<img src="/_images/aws-cost-usage-report-details.png" />
+![img](/_images/aws-cost-usage-report-details.png)
 
-<img src="/_images/aws-stompy-step3.png" />
+![img](/_images/aws-stompy-step3.png)
 
 2). 若没有CUR满足以上条件，则需创建新的CUR：
 
-<img src="/_images/aws-cost-usage-report-create.png" />
+![img](/_images/aws-cost-usage-report-create.png)
 
 a. 创建您的CUR报告，并为之命名，确保您的报告细节和数据刷新的设置均已被勾选上，点击“继续”。
 
-<img src="/_images/aws-cost-usage-report-create-step.png" />
+![img](/_images/aws-cost-usage-report-create-step.png)
 
 b. 选择CUR存放的S3桶，若您已有新加坡地区的S3桶，选中即可；若没有，则需创建您的S3桶，为之命名，并选择区域为“新加坡”，这很重要，若您没有选择新加坡，我们为您获取数据时可能会有一定的延迟，点击“继续”。
 
-<img src="/_images/aws-cost-usage-report-create-s3.png" />
+![img](/_images/aws-cost-usage-report-create-s3.png)
 
 c. 勾选“我已确认政策无误”，并点击“保存”。
 
-<img src="/_images/aws-cost-usage-report-create-save.png" />
+![img](/_images/aws-cost-usage-report-create-save.png)
 
 d. 为您的报告路径命名（S3桶中存储CUR的路径名称），确保时间间隔选每小时，报表数据集成于“Amazon Athena”，Compression type用Parquet, 点击“继续”。
 
-<img src="/_images/aws-cost-usage-report-do.png" />
+![img](/_images/aws-cost-usage-report-do.png)
 
 e. 在交付选项处，复制S3桶的名称，点击“检查和完成”。
 
-<img src="/_images/aws-cost-usage-report-complete.png" />
+![img](/_images/aws-cost-usage-report-complete.png)
 
 f. 如果您之前没有设置过CUR，这里需要等24-48个小时(取决于您的数据量)，等待AWS官方处理完毕后，回到Stompy页面，粘贴S3桶名称，点击确认。
 
-<img src="/_images/aws-stompy-step3-confirm.png" />
+![img](/_images/aws-stompy-step3-confirm.png)
 
 3. 点击“运行模板”。
 
