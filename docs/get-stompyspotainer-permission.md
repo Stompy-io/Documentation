@@ -26,7 +26,7 @@
 
 ### 第三步：粘贴SpoTainerRoleArn
 
-1. 等待AWS运行完成后，过程大概需要几分钟（运行过程可在“Events”一栏查看），在“输出”一栏复制“值”，粘贴到Stompy页面，点击“连接”，完成！
+等待AWS运行完成后，过程大概需要几分钟（运行过程可在“Events”一栏查看），在“输出”一栏复制“值”，粘贴到Stompy页面，点击“连接”，完成！
 
 ![img](/_images/stompyspotainer-cloudformation-status.png)
 
