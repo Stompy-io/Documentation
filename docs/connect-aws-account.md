@@ -34,13 +34,9 @@
 
 1. 进入AWS管理控制台后，点击右上角个人账号，选择**我的账号**，激活IAM用户和角色访问账单信息的权限。
 
-<img src="/_images/aws-root-login.png" />
+<img src="/_images/aws-my-account.png" />
 
-![wecom-temp-b1f92eed0435665c0af9eb05fa964ed6](/var/folders/hr/3ggfjhcj5nxcpd0wtwfkx_040000gn/T/com.tencent.WeWorkMac/wecom-temp-b1f92eed0435665c0af9eb05fa964ed6.png)
-
-![img](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png)
-
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png)
+<img src="/_images/aws-activate-iam-access.png" />
 
 2. 打开成本和使用率报告Cost and Usage Reports（CUR）
 
@@ -54,59 +50,53 @@ c. 时间粒度为每小时。
 
 d. 使用 Amazon Athena 集成报告数据。
 
-![图形用户界面, 文本, 应用程序, 电子邮件, 网站  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image007.png)
+<img src="/_images/aws-cost-usage-report.png" />
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image008.png)
+<img src="/_images/aws-cost-usage-report-details.png" />
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.png)
+<img src="/_images/aws-stompy-step3.png" />
 
 2). 若没有CUR满足以上条件，则需创建新的CUR：
 
-![图形用户界面, 文本, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image010.png)
+<img src="/_images/aws-cost-usage-report-create.png" />
 
 a. 创建您的CUR报告，并为之命名，确保您的报告细节和数据刷新的设置均已被勾选上，点击“继续”。
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image011.png)
+<img src="/_images/aws-cost-usage-report-create-step.png" />
 
 b. 选择CUR存放的S3桶，若您已有新加坡地区的S3桶，选中即可；若没有，则需创建您的S3桶，为之命名，并选择区域为“新加坡”，这很重要，若您没有选择新加坡，我们为您获取数据时可能会有一定的延迟，点击“继续”。
 
-![图形用户界面, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image012.png)
+<img src="/_images/aws-cost-usage-report-create-s3.png" />
 
 c. 勾选“我已确认政策无误”，并点击“保存”。
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image013.png)
-
-若系统提示您的S3桶名称已存在，返回重新命名即可。
-
-![图形用户界面, 文本, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image014.png)
+<img src="/_images/aws-cost-usage-report-create-save.png" />
 
 d. 为您的报告路径命名（S3桶中存储CUR的路径名称），确保时间间隔选每小时，报表数据集成于“Amazon Athena”，Compression type用Parquet, 点击“继续”。
 
-![图形用户界面, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image015.png)
+<img src="/_images/aws-cost-usage-report-do.png" />
 
 e. 在交付选项处，复制S3桶的名称，点击“检查和完成”。
 
-![图形用户界面, 文本, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image016.png)
+<img src="/_images/aws-cost-usage-report-complete.png" />
 
 f. 如果您之前没有设置过CUR，这里需要等24-48个小时(取决于您的数据量)，等待AWS官方处理完毕后，回到Stompy页面，粘贴S3桶名称，点击确认。
 
-![img](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image009.png)
+<img src="/_images/aws-stompy-step3-confirm.png" />
 
 3. 点击“运行模板”。
 
-![img](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image017.png)
+![img](/_images/aws-stompy-step3-run.png)
 
 4. 页面跳转到AWS的CloudFormation页面后，勾选“我已知晓AWS CloudFormation可能会创建IAM资源”，点击“创建堆栈”。
 
-![img](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image018.png)
+![img](/_images/aws-cloudformation-create.png)
 
 5. 等待AWS运行完成后，过程大概需要几分钟（运行过程可在“Events”一栏查看），在“输出”一栏复制“值”，粘贴到Stompy页面。
 
-![img](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image019.png)
+![img](/_images/aws-cloudformation-status.png)
 
-![图形用户界面, 文本, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image020.png)
-
- 
+![img](/_images/aws-stompy-step3-arn.png)
 
 ### 第四步：添加 StompySpoTainer 权限
 
@@ -116,14 +106,12 @@ f. 如果您之前没有设置过CUR，这里需要等24-48个小时(取决于�
 
 2. 页面跳转到AWS的CloudFormation页面后，勾选“我已知晓AWS CloudFormation可能会创建IAM资源”，点击“创建堆栈”。
 
-![图形用户界面, 文本, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image022.png)
+![img](/_images/aws-cloudformation-create.png)
 
 3. 等待AWS运行完成后，过程大概需要几分钟（运行过程可在“Events”一栏查看），在“输出”一栏复制“值”，粘贴到Stompy页面。
 
-![图形用户界面, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image023.png)
+![img](/_images/aws-cloudformation-step4.png)
 
-![图形用户界面, 应用程序  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image024.png)
+![img](/_images/aws-stompy-step4-connect.png)
 
 4. 点击连接，完成！
-
-![图形用户界面, 文本, 应用程序, 电子邮件  描述已自动生成](file:////Users/kchou/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image025.png)
