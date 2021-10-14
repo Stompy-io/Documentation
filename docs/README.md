@@ -1,3 +1,3 @@
-# Stompy
-This is the document for external customer's use. We can use English + Chinese approach. 
+# Stompy 简介
+我们专注于公有云自动化成本节约以及生产效率提升的解决方案，以「 提供有效的结果 」为核心价值、以「 确保客户数据安全 」为原则、以「 站在客户的立场 」为标准 ，构建智能、高效、简单的云原生成本节约，效率提升的解决方案，促进公有云生态的健康发展。
 
