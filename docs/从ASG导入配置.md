@@ -15,7 +15,7 @@
 
 1. 在页面左侧菜单栏点击“组信息”，点击右上角“创建 SpoTainer 组”。
 
-![截屏2021-10-26 下午3.15.14](/Users/jieniyousikuaifuji/Desktop/截屏2021-10-26 下午3.15.14.png)
+![asg_import_step1](/docs/_images/spotainer_help_document/asg_import_step1)
 
 2. 选择“从已有 Auto Scaling 组导入参数设置”，选择导入区域和 ASG，点击“选择”。
 
