@@ -15,15 +15,15 @@
 
 1. 在页面左侧菜单栏点击“组信息”，点击右上角“创建 SpoTainer 组”。
 
-![img](/_images/spotainer_help_document/asg_import_step1.png)
+![img](../_images/spotainer_help_document/asg_import_step1.png)
 
 2. 选择“从已有 Auto Scaling 组导入参数设置”，选择导入区域和 ASG，点击“选择”。
 
-<img src="/_images/spotainer_help_document/asg_import_step2.png" alt="asg_import_step2" style="zoom:67%;" />
+<img src="../_images/spotainer_help_document/asg_import_step2.png" alt="asg_import_step2" style="zoom:67%;" />
 
 3. ASG 参数设置已导入到 SpoTainer 组，可在“提交”页查看，若确认没问题，点击“创建”。
 
-![img](/_images/spotainer_help_document/asg_import_step3.png)
+![img](../_images/spotainer_help_document/asg_import_step3.png)
 
 4. 如有需要，点击“编辑”即可修改具体配置。
 
@@ -43,7 +43,7 @@
 
   ◦ 按需实例类型：按需计费的实例类型，以便在指定的 Spot 市场不可用时使用。
 
-  ![img](/_images/spotainer_help_document/general_setting.png)
+  ![img](../_images/spotainer_help_document/general_setting.png)
 
 - 容量设定
 
@@ -57,7 +57,7 @@
 
   ◦ Spot 实例比例：组中所需的 Spot 实例比例。
 
-  ![img](/_images/spotainer_help_document/capacity_setting.png)
+  ![img](../_images/spotainer_help_document/capacity_setting.png)
 
 - 可用区&子网
 
@@ -67,13 +67,13 @@
 
   ◦ 子网：对于每个可用区，需选择至少一个子网。
 
-  ![img](/_images/spotainer_help_document/az_setting.png)
+  ![img](../_images/spotainer_help_document/az_setting.png)
 
 - Spot 实例评分
 
   根据所选可用区和 Spot 实例类型，展示 Spot 市场的评分。分数范围为 0-100，其中 0 是非可用市场，100 将提供成本最优和可用性最佳的 Spot 市场。
 
-  ![img](/_images/spotainer_help_document/score_setting.png)
+  ![img](../_images/spotainer_help_document/score_setting.png)
 
 - Spot 类型
 
@@ -81,7 +81,7 @@
 
   > 强烈建议选择多个实例类型（具有相似的规格），以确保更丰富的 Spot 市场可供使用。
 
-  ![img](/_images/spotainer_help_document/spot_type_setting.png)
+  ![img](../_images/spotainer_help_document/spot_type_setting.png)
 
 - 启动配置
 
@@ -91,7 +91,7 @@
 
   ◦ 密钥：进行身份验证以访问实例的密钥。
 
-  ![img](/_images/spotainer_help_document/launch_setting.png)
+  ![img](../_images/spotainer_help_document/launch_setting.png)
 
   
 
@@ -99,15 +99,15 @@
 
 - 其他配置
 
-  ◦ IAM 角色：组内实例所需的IAM角色。需要先在AWS账号中定义IAM角色后才能使用它。
+  ◦ IAM 角色：组内实例所需的 IAM 角色。需要先在AWS账号中定义 IAM 角色后才能使用它。
 
   ◦ 公网 IP 分配：从 AWS 的公共 IP 地址池请求公共 IP 地址，以使实例可从网络访问。
 
   ◦ 弹性 IP：可指定一个或多个弹性 IP 与 SpoTainer 组相关联，无论组内实例如何更换，实例将自动关联您指定的弹性 IP。
 
-  ◦ 保留私有 IP 地址：组内实例因中断发生替换时，私有IP保持不变。
+  ◦ 保留私有 IP 地址：组内实例因中断发生替换时，私有 IP 保持不变。
 
-  ◦ AMI 自动备份：自动创建镜像和EBS卷快照，如果发生实例替换，SpoTainer组会使用最新镜像开启新实例。
+  ◦ AMI 自动备份：自动创建镜像和EBS卷快照，如果发生实例替换，SpoTainer 组会使用最新镜像开启新实例。
 
   ◦ EBS 优化：非 EBS 优化实例类型可启用 EBS 优化容量，以为 EBS 服务提供高带宽连接。
 
@@ -119,13 +119,13 @@
 
   ◦ 用户数据（启动脚本）：指定用户数据来配置实例或在启动实例期间运行配置脚本。
 
-  ![img](/_images/spotainer_help_document/other_setting.png)
+  ![img](../_images/spotainer_help_document/other_setting.png)
 
 - 负载均衡器
 
   ◦ 目标组：将一个或多个目标组与 SpoTainer 组关联，组内实例将注册到所选目标组。
 
-  ![img](/_images/spotainer_help_document/elb_setting.png)
+  ![img](../_images/spotainer_help_document/elb_setting.png)
 
 - 运行状况检查
 
@@ -133,7 +133,7 @@
 
   ◦ 运行状况检查宽限期（秒）：在第一次健康检查之前允许实例启动和应用程序完全启动的时间。
 
-  ![img](/_images/spotainer_help_document/auto_healing_setting.png)
+  ![img](../_images/spotainer_help_document/auto_healing_setting.png)
 
   
 
@@ -151,7 +151,7 @@
 
      ▪ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/_images/spotainer_help_document/dmas_setting.png)
+  ![img](../_images/spotainer_help_document/dmas_setting.png)
 
 - 目标追踪扩展策略
 
@@ -163,7 +163,7 @@
 
   ◦ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/_images/spotainer_help_document/target_setting.png)
+  ![img](../_images/spotainer_help_document/target_setting.png)
 
 - 简单扩展策略
 
@@ -187,4 +187,4 @@
 
      ▪ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/_images/spotainer_help_document/simple_setting.png)
+  ![img](../_images/spotainer_help_document/simple_setting.png)
