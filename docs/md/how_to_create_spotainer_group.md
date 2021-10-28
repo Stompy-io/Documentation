@@ -13,10 +13,10 @@
 ### 步骤：
 
 1. 在页面左侧菜单栏点击“组信息”，点击右上角“创建 SpoTainer 组”。
-![img](/docs/_images/spotainer_help_document/asg_import_step1.png)
+![img](../_images/spotainer_help_document/asg_import_step1.png)
 
 2. 选择“创建一个新 SpoTainer 组”，点击“选择”。
-![img](/docs/_images/spotainer_help_document/asg_import_step2.png)
+![img](../_images/spotainer_help_document/asg_import_step2.png)
 
 3. 编辑具体配置：
 
@@ -34,7 +34,7 @@
 
   ◦ 按需实例类型：按需计费的实例类型，以便在指定的 Spot 市场不可用时使用。
 
-  ![img](/docs/_images/spotainer_help_document/general_setting.png)
+  ![img](../_images/spotainer_help_document/general_setting.png)
 
 - 容量设定
 
@@ -48,7 +48,7 @@
 
   ◦ Spot 实例比例：组中所需的 Spot 实例比例。
 
-  ![img](/docs/_images/spotainer_help_document/capacity_setting.png)
+  ![img](../_images/spotainer_help_document/capacity_setting.png)
 
 - 可用区&子网
 
@@ -58,13 +58,13 @@
 
   ◦ 子网：对于每个可用区，需选择至少一个子网。
 
-  ![img](/docs/_images/spotainer_help_document/az_setting.png)
+  ![img](../_images/spotainer_help_document/az_setting.png)
 
 - Spot 实例评分
 
   根据所选可用区和 Spot 实例类型，展示 Spot 市场的评分。分数范围为 0-100，其中 0 是非可用市场，100 将提供成本最优和可用性最佳的 Spot 市场。
 
-  ![img](/docs/_images/spotainer_help_document/spot_score.png)
+  ![img](../_images/spotainer_help_document/spot_score.png)
 
 - Spot 类型
 
@@ -72,7 +72,7 @@
 
   > 强烈建议选择多个实例类型（具有相似的规格），以确保更丰富的 Spot 市场可供使用。
 
-  ![img](/docs/_images/spotainer_help_document/spot_type_setting.png)
+  ![img](../_images/spotainer_help_document/spot_type_setting.png)
 
 - 启动配置
 
@@ -82,7 +82,7 @@
 
   ◦ 密钥：进行身份验证以访问实例的密钥。
 
-  ![img](/docs/_images/spotainer_help_document/launch_setting.png)
+  ![img](../_images/spotainer_help_document/launch_setting.png)
 
   
 
@@ -110,13 +110,13 @@
 
   ◦ 用户数据（启动脚本）：指定用户数据来配置实例或在启动实例期间运行配置脚本。
 
-  ![img](/docs/_images/spotainer_help_document/other_setting.png)
+  ![img](../_images/spotainer_help_document/other_setting.png)
 
 - 负载均衡器
 
   ◦ 目标组：将一个或多个目标组与 SpoTainer 组关联，组内实例将注册到所选目标组。
 
-  ![img](/docs/_images/spotainer_help_document/elb_setting.png)
+  ![img](../_images/spotainer_help_document/elb_setting.png)
 
 - 运行状况检查
 
@@ -124,7 +124,7 @@
 
   ◦ 运行状况检查宽限期（秒）：在第一次健康检查之前允许实例启动和应用程序完全启动的时间。
 
-  ![img](/docs/_images/spotainer_help_document/auto_healing_setting.png)
+  ![img](../_images/spotainer_help_document/auto_healing_setting.png)
 
   
 
@@ -142,7 +142,7 @@
 
      ▪ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/docs/_images/spotainer_help_document/dmas_setting.png)
+  ![img](../_images/spotainer_help_document/dmas_setting.png)
 
 - 目标追踪扩展策略
 
@@ -154,7 +154,7 @@
 
   ◦ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/docs/_images/spotainer_help_document/target_setting.png)
+  ![img](../_images/spotainer_help_document/target_setting.png)
 
 - 简单扩展策略
 
@@ -178,12 +178,12 @@
 
      ▪ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](/docs/_images/spotainer_help_document/simple_setting.png)
+  ![img](../_images/spotainer_help_document/simple_setting.png)
 
 
 
 #### 提交
 
-查看并进行必要的修改后，点击“创建”。
+4. 查看并进行必要的修改后，点击“创建”。
 
-![img](/docs/_images/spotainer_help_document/asg_import_step3.png)
+![img](../_images/spotainer_help_document/asg_import_step3.png)
