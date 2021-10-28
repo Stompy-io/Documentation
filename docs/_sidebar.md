@@ -3,5 +3,5 @@
   * [如何连接 AWS 账户](connect-aws-account.md)
   * [添加 StompyAnalySaver 权限](get-stompyanalysaver-permission.md)
   * [添加 StompySpoTainer 权限](get-stompyspotainer-permission.md)
-  * [从 ASG 导入配置](/md/how-to-import-from-ASG.md )
+  * [从 ASG 导入配置](/md/how-to-import-from-ASG.md)
   * [创建新 SpoTainer 组](/md/how_to_create_spotainer_group.md)
