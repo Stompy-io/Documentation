@@ -13,12 +13,10 @@
 ### 步骤：
 
 1. 在页面左侧菜单栏点击“组信息”，点击右上角“创建 SpoTainer 组”。
-
 ![img](/docs/_images/spotainer_help_document/asg_import_step1.png)
 
 2. 选择“创建一个新 SpoTainer 组”，点击“选择”。
-
-<img src="/docs/_images/spotainer_help_document/asg_import_step2.png" alt="asg_import_step2" style="zoom:67%;" />
+![img](/docs/_images/spotainer_help_document/asg_import_step2.png)
 
 3. 编辑具体配置：
 
