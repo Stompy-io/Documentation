@@ -6,27 +6,32 @@
 
 ### 第一步：登录您的 AWS 账号
 
-1. 注册后登录，进入连接页面，点击 **登录**
+1. 注册后登录，进入连接页面，点击 **登录**。
 
 ![img](/_images/aws-login.png)
 
-2. 登录您的AWS根账号
+2. 登录您的 AWS 根账号。
 
-> 建议您登录AWS根账号，因为AWS根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
+> 建议您登录 AWS 根账号，因为 AWS 根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
 
 ![img](/_images/aws-root-login.png)
+
 
 
 ### 第二步：选择您需要的产品权限
 
 * StompyAnalySaver 产品可为您提供花费分析，成本优化建议并自动化执行。
-* StompySpoTainer 可为您自动扩容、缩容管理实例组，使用算法最大化利用 Spot 实例为您节省成本，并为您提供 Spot 实例中断自动解决方案。
+* StompySpoTainer 可为您自动扩容、缩容以管理实例组，使用机器学习和算法为您实现确保可用性下最低成本的自动扩展。
 
-> 若您没有特殊的 AWS 账号管理习惯和需求，建议您直接用 AWS 根账号添加两个产品权限。
+> 若您有使用多个 AWS 账号，不同 Stompy 产品想要不同的 AWS 账号授权，您可以先跳过此连接步骤，重新登录后仍可使用不同的 AWS 账号分别授权不同的 Stompy 产品权限。
 
-> 若您有特定的 AWS 生产账号来专门跑实例，建议您登录AWS生产账号，并添加 Stompy SpoTainer 权限。
+> 若您想查看更全面的成本优化建议并自动化执行，建议您登录 AWS 根账号，并添加 StompyAnalySaver 权限，因为 AWS 根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
 
-> 若您想查看更全面的成本优化建议并自动化执行，建议您另注册一个 Stompy 账号，并登录 AWS 根账号，并添加 StompyAnalySaver 权限，因为 AWS 根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
+> 若您有特定的 AWS 生产账号来专门跑实例，建议您在此步骤不要勾选 StompySpoTainer，登录 Stompy 平台后可再登录 AWS 生产账号以另外添加 StompySpoTainer 权限。后续步骤可查看：[如何添加StompySpoTainer权限](https://docs.stompy.io/#/get-stompyspotainer-permission)
+
+![img](/_images/aws-stompy-step2.png)
+
+
 
 ### 第三步：添加 StompyAnalySaver 权限
 
@@ -36,17 +41,17 @@
 
 ![img](/_images/aws-activate-iam-access.png)
 
-2. 打开成本和使用率报告 Cost and Usage Reports（CUR）
+2. 打开成本和使用率报告 Cost and Usage Reports（CUR）。
 
-1). 若您已有 CUR 满足以下条件，则可直接将存放 CUR 的 S3 桶名称复制粘贴到 Stompy。
+   i. 若您已有 CUR 满足以下条件，则可直接将存放 CUR 的 S3 桶名称复制粘贴到 Stompy。
 
-a. 在附加报告详细信息下包括资源 ID。
+- 在附加报告详细信息下包括资源 ID。
 
-b. 启用数据刷新设置。
+- 启用数据刷新设置。
 
-c. 时间粒度为每小时。
+- 时间粒度为每小时。
 
-d. 使用 Amazon Athena 集成报告数据。
+- 使用 Amazon Athena 集成报告数据。
 
 ![img](/_images/aws-cost-usage-report.png)
 
@@ -54,7 +59,7 @@ d. 使用 Amazon Athena 集成报告数据。
 
 ![img](/_images/aws-stompy-step3.png)
 
-2). 若没有CUR满足以上条件，则需创建新的CUR：
+   ii. 若没有CUR满足以上条件，则需创建新的CUR：
 
 ![img](/_images/aws-cost-usage-report-create.png)
 
@@ -78,9 +83,9 @@ e. 在交付选项处，复制 S3 桶的名称，点击**检查和完成**。
 
 ![img](/_images/aws-cost-usage-report-complete.png)
 
-f. 如果您之前没有设置过 CUR，这里需要等24-48个小时(取决于您的数据量)，等待AWS官方处理完毕后，回到 Stompy 页面，粘贴 S3 桶名称，点击确认。
+f. 如果您之前没有设置过 CUR，这里需要等24-48个小时(取决于您的数据量)，等待AWS官方处理完毕后，回到 Stompy 页面，粘贴 S3 桶名称，点击**确认**。
 
-![img](/_images/aws-stompy-step3-confirm.png)
+![img](/_images/aws-stompy-step3-run.png)
 
 3. 点击**运行模板**。
 
@@ -112,4 +117,4 @@ f. 如果您之前没有设置过 CUR，这里需要等24-48个小时(取决于�
 
 ![img](/_images/aws-stompy-step4-connect.png)
 
-4. 点击连接，完成！
+4. 点击**连接**，完成！
