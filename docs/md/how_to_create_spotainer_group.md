@@ -156,7 +156,7 @@
 
   ![img](../_images/spotainer_help_document/target_setting.png)
 
-- 简单扩展策略
+<!-- - 简单扩展策略
 
   ◦ 策略名称：Simple Scaling Policy 1
 
@@ -178,7 +178,7 @@
 
      ▪ 冷却时间：每次扩展动作后需要等待的时间。
 
-  ![img](../_images/spotainer_help_document/simple_setting.png)
+  ![img](../_images/spotainer_help_document/simple_setting.png) -->
 
 
 
