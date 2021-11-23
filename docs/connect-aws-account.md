@@ -35,11 +35,24 @@
 
 ### 第三步：添加 StompyAnalySaver 权限
 
-1. 进入 AWS 管理控制台后，点击右上角个人账号，选择**我的账号**，激活 IAM 用户和角色访问账单信息的权限。
+1. i. AWS 账户根用户：进入 AWS 管理控制台后，点击右上角个人账号，选择**账号**，**激活** IAM 用户和角色访问账单信息的权限。更多关于访问账单权限详情可[点击此处](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html#ControllingAccessWebsite-Activate)查看。
 
 ![img](/_images/aws-my-account.png)
 
 ![img](/_images/aws-activate-iam-access.png)
+
+  ii. IAM 用户：确保根用户已按上述步骤为 IAM 用户激活对账单信息的访问，可按以下步骤进入 AWS 管理控制台，添加用户的 IAM 策略以允许访问账单信息。
+
+![img](./_images/IAM1.png)
+
+![img](./_images/IAM2.png)
+
+![img](./_images/IAM3.png)
+
+![img](./_images/IAM4.png)
+
+![img](./_images/IAM5.png)
+
 
 2. 打开成本和使用率报告 Cost and Usage Reports（CUR）。
 
