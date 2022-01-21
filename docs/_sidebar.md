@@ -1,4 +1,5 @@
 - [SpoTainer 产品介绍](/md/SpoTainer_introduction.md)
+- [BurScale 策略使用文档](BurScale-documentation.md)
 - [DMAS 策略使用文档](DMAS-documentation.md)
 - [如何连接 AWS 账户](connect-aws-account.md)
 - [添加 StompyAnalySaver 权限](get-stompyanalysaver-permission.md)
