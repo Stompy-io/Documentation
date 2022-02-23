@@ -50,7 +50,6 @@ BurScale 则是专门为了利用可突增实例的特性而设计的自动扩�
 
 ![img](../_images/burscale/burscale_menu.png)
 
-
 * 策略名称：您的策略名称
 * 目标组：BurScale SpoTainer 组所用的已关联负载均衡器的目标组
 * 允许 Stompy 重新创建所选 ALB 和目标组*：我们将参照您所选的负载均衡器，复制一个同样的均衡器并将 SpoTainer 组下的两个目标组连接于这个新建均衡器，不影响您原有的负载均衡器和目标组的运行
