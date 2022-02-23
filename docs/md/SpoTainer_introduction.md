@@ -15,11 +15,11 @@ AWS 中的 Spot 市场被定义为特定实例类型、特定可用区中特定�
 ![img](../_images/spotainer_help_document/spot_score.png)
 
 
-#### AMI 自动备份
+<!-- #### AMI 自动备份
 
 SpoTainer 组将对最新运行的实例按照选定更新频率持续创建镜像，并使用最新镜像以更新替换组内实例。默认情况下我们会存储每个实例最新的三个镜像。我们还将实时监控组中实例的状态，一旦检测到实例中断，将自动从最新实例镜像中恢复实例。
 
-![img](../_images/spotainer_help_document/ami_autobackup.png)
+![img](../_images/spotainer_help_document/ami_autobackup.png) -->
 
 
 
@@ -39,9 +39,9 @@ SpoTainer 组的预测性自动扩展简化了定义扩展策略，识别请求�
 
 
 
-#### 实例中断管理
+<!-- #### 实例中断管理
 
-若 Spot 实例不可用，我们将会恢复按需实例，直到 Spot 实例可用，我们将第一时间切换回 Spot 实例，在保证可用性的条件下以为您提供最大节省。
+若 Spot 实例不可用，我们将会恢复按需实例，直到 Spot 实例可用，我们将第一时间切换回 Spot 实例，在保证可用性的条件下以为您提供最大节省。 -->
 
 
 

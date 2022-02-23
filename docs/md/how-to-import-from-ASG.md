@@ -107,7 +107,7 @@
 
   ◦ 保留私有 IP 地址：组内实例因中断发生替换时，私有 IP 保持不变。
 
-  ◦ AMI 自动备份：自动创建镜像和EBS卷快照，如果发生实例替换，SpoTainer 组会使用最新镜像开启新实例。
+  <!-- ◦ AMI 自动备份：自动创建镜像和EBS卷快照，如果发生实例替换，SpoTainer 组会使用最新镜像开启新实例。 -->
 
   ◦ EBS 优化：非 EBS 优化实例类型可启用 EBS 优化容量，以为 EBS 服务提供高带宽连接。
 
@@ -121,11 +121,11 @@
 
   ![img](../_images/spotainer_help_document/other_setting.png)
 
-- 负载均衡器
+- 目标组
 
-  ◦ 目标组：将一个或多个目标组与 SpoTainer 组关联，组内实例将注册到所选目标组。
+  ◦ 将一个已关联负载均衡器的目标组添加到 SpoTainer 组设定，组内实例将注册到所选目标组。
 
-  ![img](../_images/spotainer_help_document/elb_setting.png)
+  ![img](../_images/spotainer_help_document/target_group_setting.png)
 
 - 运行状况检查
 
