@@ -27,7 +27,7 @@
 
 > 若您想查看更全面的成本优化建议并自动化执行，建议您登录 AWS 根账号，并添加 StompyAnalySaver 权限，因为 AWS 根账号能获取组织中其它账号的花费数据，并且能将成本优化方案应用到其它账号。
 
-> 若您有特定的 AWS 生产账号来专门跑实例，建议您在此步骤不要勾选 StompySpoTainer，登录 Stompy 平台后可再登录 AWS 生产账号以另外添加 StompySpoTainer 权限。后续步骤可查看：[如何添加StompySpoTainer权限](https://docs.stompy.io/#/get-stompyspotainer-permission)
+> 若您有特定的 AWS 生产账号来专门跑实例，建议您在此步骤不要勾选 StompySpoTainer，登录 Stompy 平台后可再登录 AWS 生产账号以另外添加 StompySpoTainer 权限。后续步骤可查看：[如何添加 StompySpoTainer 权限](connect-aws-account.md?id=第四步：添加-stompyspotainer-权限)
 
 ![img](/_images/aws-stompy-step2.png)
 

@@ -33,7 +33,7 @@ SpoTainer 组将对最新运行的实例按照选定更新频率持续创建镜�
 
 #### 自动扩展策略
 
-SpoTainer 组的预测性自动扩展简化了定义扩展策略，识别请求高峰时间，和自动扩展以确保可用容量的过程。机器学习算法可通过对不同流量模式进行分类，将应用不同的时间序列预测模型来生成预测，以在实际扩展前有充足的时间来启动和设置新实例。详情可看 [DMAS 策略使用文档](https://docs.stompy.io/#/DMAS-documentation)。
+SpoTainer 组的预测性自动扩展简化了定义扩展策略，识别请求高峰时间，和自动扩展以确保可用容量的过程。机器学习算法可通过对不同流量模式进行分类，将应用不同的时间序列预测模型来生成预测，以在实际扩展前有充足的时间来启动和设置新实例。详情可看 [DMAS 策略使用文档](DMAS-documentation.md?id=dynamic-multi-level-autoscaling-strategy-dmas)。
 
 ![img](../_images/spotainer_help_document/dmas_setting.png)
 
@@ -55,22 +55,22 @@ SpoTainer 组支持高可用性部署结构，允许您在单个区域的多个�
 
 #### 连接 AWS 账号
 
-- [第一次登录如何连接 AWS 账号](https://docs.stompy.io/#/connect-aws-account)
+- [第一次登录如何连接 AWS 账号](connect-aws-account.md?id=第一次登录如何连接-aws-账号？)
 
-- [如何添加 StompyAnalySaver 权限](https://docs.stompy.io/#/connect-aws-account)
+- [如何添加 StompyAnalySaver 权限](connect-aws-account.md?id=第三步：添加-stompyanalysaver-权限)
 
-- [如何添加 StompySpoTainer 权限](https://docs.stompy.io/#/get-stompyspotainer-permission)
+- [如何添加 StompySpoTainer 权限](connect-aws-account.md?id=第四步：添加-stompyspotainer-权限)
 
 
 
 #### 从 AWS 现有 Auto Scaling Group 导入配置
 
-- [如何从 ASG 中导入配置](https://docs.stompy.io/#/md/how-to-import-from-ASG)
+- [如何从 ASG 中导入配置](md/how-to-import-from-ASG.md?id=从现有-auto-scaling-group-中导入配置)
 
 
 
 #### 创建新的 SpoTainer 组
 
-- [如何创建新的 SpoTainer 组](https://docs.stompy.io/#/md/how_to_create_spotainer_group) 
+- [如何创建新的 SpoTainer 组](md/how_to_create_spotainer_group.md?id=如何创建新的spotainer组) 
 
 

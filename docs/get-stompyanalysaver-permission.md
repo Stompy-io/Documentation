@@ -10,4 +10,4 @@
 
 ![img](/_images/stompyanalysaver-add-permission.png)
 
-2. 后续步骤参照 [第一次登录如何连接 AWS 账号](https://docs.stompy.io/#/connect-aws-account)
+2. 后续步骤参照 [第一次登录如何连接 AWS 账号](connect-aws-account.md?id=第一次登录如何连接-aws-账号？)
