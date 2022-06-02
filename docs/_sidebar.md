@@ -1,11 +1,14 @@
-- **文档**
-- - [SpoTainer 产品介绍](/md/SpoTainer_introduction.md)
-- - [BurScale 策略使用文档](BurScale-documentation.md)
-- - [DMAS 策略使用文档](DMAS-documentation.md)
+- **账户相关**
 - - [如何连接 AWS 账户](connect-aws-account.md)
 - - [添加 StompyAnalySaver 权限](get-stompyanalysaver-permission.md)
 - - [添加 StompySpoTainer 权限](get-stompyspotainer-permission.md)
-- - [从 ASG 导入配置](/md/how-to-import-from-ASG.md)
+- **SpoTainer 文档**
+- - [SpoTainer 产品介绍](/md/SpoTainer_introduction.md)
 - - [创建新 SpoTainer 组](/md/how_to_create_spotainer_group.md)
-- **视频 Demo**
+- - [从 ASG 导入配置](/md/how-to-import-from-ASG.md)
+- - [BurScale 策略使用文档](BurScale-documentation.md)
+- - [DMAS 策略使用文档](DMAS-documentation.md)
+- **K8s 集群优化**
+- - [再平衡方案使用文档](/md/K8s/rebalance.md)
+- **Demo 视频**
 - - [AWS 相关](/video_demo/AWS_demo.md)
