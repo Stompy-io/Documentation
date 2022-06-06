@@ -8,10 +8,10 @@
 
 如想要最大化利用再平衡方案实现节省， 集群需要满足以下几个要求：
 
-    * Pod 模版明确标出所需资源，如 CPU： 500m， memory：200mi。
-    * 减少自定义 node selector/node affinity。 我们支持自动识别部分 [well known labels](https://kubernetes.io/zh/docs/reference/labels-annotations-taints/)， 
-        但是过多的 node selector 条件会影响再平衡优化的空间
-    * 再平衡适用场景为中等大小及以上集群。当集群数量较小以及使用了 t 系列实例，再平衡方案给您带来的优化将非常有限
+  * Pod 模版明确标出所需资源，如 CPU： 500m， memory：200mi。
+  * 减少自定义 node selector/node affinity。 我们支持自动识别部分 [well known labels](https://kubernetes.io/zh/docs/reference/labels-annotations-taints/)， 
+      但是过多的 node selector 条件会影响再平衡优化的空间
+  * 再平衡适用场景为中等大小及以上集群。当集群数量较小以及使用了 t 系列实例，再平衡方案给您带来的优化将非常有限
 
 ### 创建再平衡方案
 
