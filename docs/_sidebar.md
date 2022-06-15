@@ -10,5 +10,6 @@
 - - [DMAS 策略使用文档](DMAS-documentation.md)
 - **K8s 集群优化**
 - - [再平衡方案使用文档](/md/K8s/rebalance.md)
+- - [移除代理](/md/K8s/remove_agent.md)
 - **Demo 视频**
 - - [AWS 相关](/video_demo/AWS_demo.md)
